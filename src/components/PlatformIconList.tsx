@@ -25,7 +25,7 @@ const iconMap: { [key: string]: IconType } = {
     android: FaAndroid,
 };
 
-const PlatformIconList = ({ platforms }: Props) => {
+const PlatformIconList = ({ platforms = [] }: Props) => {
     return (
         <HStack marginY={1}>
             {platforms.map((platform) => (
