@@ -39,7 +39,7 @@ const useData = <T>(
 
 export default useData;
 
-interface FetchResponse<T> {
+export interface FetchResponse<T> {
     count: number;
     results: T[];
 }
