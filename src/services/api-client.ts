@@ -6,3 +6,8 @@ export default axios.create({
         key: `${import.meta.env.VITE_APP_SECRET_VAR}`,
     },
 });
+
+export interface FetchResponse<T> {
+    count: number;
+    results: T[];
+}
