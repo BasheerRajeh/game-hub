@@ -24,5 +24,6 @@ class APIClient<T> {
 export default APIClient;
 export interface FetchResponse<T> {
     count: number;
+    next: string | null;
     results: T[];
 }
